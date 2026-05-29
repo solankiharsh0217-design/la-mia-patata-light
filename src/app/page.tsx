@@ -283,7 +283,7 @@ export default function Home() {
       <section className="section-padding relative overflow-hidden bg-[#261b1f] py-32">
         <div className="absolute inset-0 opacity-40">
           <Image 
-            src="https://images.unsplash.com/photo-1518977676601-b53f02ac6d31?auto=format&fit=crop&q=80&w=2000"
+            src="/images/hero2.jpg"
             alt="Potatoes"
             fill
             className="object-cover"

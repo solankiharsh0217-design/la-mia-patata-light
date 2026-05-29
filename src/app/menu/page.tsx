@@ -4,10 +4,10 @@ import ScrollReveal from "@/components/ui/ScrollReveal";
 import { Star, ArrowRight, Utensils } from "lucide-react";
 
 const categoryImages = [
-  "https://images.unsplash.com/photo-1599321955419-78537d3d1323?q=80&w=800",
-  "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?q=80&w=800",
-  "https://images.unsplash.com/photo-1546793665-c74683f339c1?q=80&w=800",
-  "https://images.unsplash.com/photo-1610393044160-59aa13c1932f?q=80&w=800",
+  "/images/cat1.jpg",
+  "/images/cat2.jpg",
+  "/images/cat2.jpg",
+  "/images/hero1.jpg",
 ];
 
 export default function MenuPage() {
@@ -17,7 +17,7 @@ export default function MenuPage() {
       <section className="relative pt-48 pb-32 bg-[#261b1f] overflow-hidden">
         <div className="absolute inset-0 opacity-20">
           <Image 
-            src="https://images.unsplash.com/photo-1511216113906-8f57bb83e776?q=80&w=2000"
+            src="/images/hero1.jpg"
             alt="Background"
             fill
             className="object-cover"
