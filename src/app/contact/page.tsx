@@ -192,7 +192,6 @@ export default function ContactPage() {
                           <option>Informazioni Generali</option>
                           <option>Prenotazione Tavolo</option>
                           <option>Eventi & Catering</option>
-                          <option>Franchising</option>
                         </select>
                       </div>
                       <div>

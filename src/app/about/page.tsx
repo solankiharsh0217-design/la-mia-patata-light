@@ -145,14 +145,6 @@ export default function AboutPage() {
 
       {/* Location Info */}
       <section className="section-padding bg-[#261b1f] text-white relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-1/2 h-full opacity-20">
-          <Image 
-            src="/images/store-exterior.jpg"
-            alt="La Mia Patata Riccione Store"
-            fill
-            className="object-cover"
-          />
-        </div>
         <div className="container-custom relative z-10">
           <div className="max-w-3xl">
             <ScrollReveal direction="right">
@@ -164,20 +156,6 @@ export default function AboutPage() {
                 Un ambiente moderno e dinamico pensato per chi ama il buon cibo italiano 
                 senza rinunciare alla velocità e alla praticità.
               </p>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div className="bg-white/5 backdrop-blur-md p-8 rounded-2xl border border-white/10">
-                  <div className="text-4xl font-serif font-bold text-[#c87f30] mb-2">40-50</div>
-                  <div className="text-sm uppercase tracking-widest opacity-60">Coperti</div>
-                </div>
-                <div className="bg-white/5 backdrop-blur-md p-8 rounded-2xl border border-white/10">
-                  <div className="text-4xl font-serif font-bold text-[#c87f30] mb-2">12H</div>
-                  <div className="text-sm uppercase tracking-widest opacity-60">Servizio</div>
-                </div>
-                <div className="bg-white/5 backdrop-blur-md p-8 rounded-2xl border border-white/10">
-                  <div className="text-4xl font-serif font-bold text-[#c87f30] mb-2">Premium</div>
-                  <div className="text-sm uppercase tracking-widest opacity-60">Qualità</div>
-                </div>
-              </div>
             </ScrollReveal>
           </div>
         </div>

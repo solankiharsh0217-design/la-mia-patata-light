@@ -66,14 +66,6 @@ export const MENU_CATEGORIES = [
   },
 ] as const;
 
-export const STATS = [
-  { value: "€25", label: "Scontrino Medio" },
-  { value: "<10%", label: "Food Cost" },
-  { value: "€75-90K", label: "Investimento" },
-  { value: "40-50", label: "Coperti" },
-  { value: "12H", label: "Orario" },
-] as const;
-
 export const WHY_CHOOSE_US = [
   {
     title: "Qualità Premium",

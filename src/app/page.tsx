@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, Clock, MapPin, Star, Utensils, Award, Zap, Heart } from "lucide-react";
 import ScrollReveal from "@/components/ui/ScrollReveal";
-import { SITE, MENU_CATEGORIES, STATS, WHY_CHOOSE_US } from "@/lib/constants";
+import { SITE, MENU_CATEGORIES, WHY_CHOOSE_US } from "@/lib/constants";
 
 const heroImages = [
   "/images/hero1.jpg",
@@ -54,12 +54,6 @@ export default function Home() {
         ))}
 
         <div className="relative z-10 max-w-6xl mx-auto px-4 py-32 text-center text-white">
-          <ScrollReveal>
-            <div className="inline-block px-4 py-1.5 bg-[#c87f30] rounded-full text-xs font-bold tracking-[0.3em] uppercase mb-6 animate-fade-in-up shadow-lg">
-              Franchising di Gastronomia
-            </div>
-          </ScrollReveal>
-          
           <ScrollReveal delay={200}>
             <h1 className="text-6xl md:text-8xl lg:text-9xl font-serif font-bold mb-8 leading-tight text-white drop-shadow-2xl">
               La Mia <span className="text-[#c87f30]">Patata</span>
@@ -81,20 +75,6 @@ export default function Home() {
               <Link href="/contact" className="btn-secondary !border-white !text-white hover:!bg-white hover:!text-[#c87f30] min-w-[200px]">
                 <span>Vieni a Trovarci</span>
               </Link>
-            </div>
-          </ScrollReveal>
-
-          {/* Stats Overlay */}
-          <ScrollReveal delay={1000} className="mt-20">
-            <div className="grid grid-cols-2 md:grid-cols-5 gap-8 max-w-5xl mx-auto glass rounded-3xl p-8 backdrop-blur-xl">
-              {STATS.map((stat, i) => (
-                <div key={i} className="text-center">
-                  <div className="text-3xl md:text-4xl font-serif font-bold text-[#c87f30]">
-                    {stat.value}
-                  </div>
-                  <div className="text-xs font-bold text-[#261b1f]/60 mt-1 uppercase tracking-widest">{stat.label}</div>
-                </div>
-              ))}
             </div>
           </ScrollReveal>
         </div>
