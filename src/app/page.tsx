@@ -8,14 +8,14 @@ import ScrollReveal from "@/components/ui/ScrollReveal";
 import { SITE, MENU_CATEGORIES, STATS, WHY_CHOOSE_US } from "@/lib/constants";
 
 const heroImages = [
-  "https://images.unsplash.com/photo-1544333346-64e4fe1827ff?q=80&w=2000",
+  "https://images.unsplash.com/photo-1599321955419-78537d3d1323?q=80&w=2000",
   "https://images.unsplash.com/photo-1511216113906-8f57bb83e776?q=80&w=2000",
   "https://images.unsplash.com/photo-1518977676601-b53f02ac6d31?q=80&w=2000",
 ];
 
 const categoryImages = [
-  "https://images.unsplash.com/photo-1544333346-64e4fe1827ff?q=80&w=800",
-  "https://images.unsplash.com/photo-1630383249896-424e482df921?q=80&w=800",
+  "https://images.unsplash.com/photo-1599321955419-78537d3d1323?q=80&w=800",
+  "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?q=80&w=800",
   "https://images.unsplash.com/photo-1546793665-c74683f339c1?q=80&w=800",
   "https://images.unsplash.com/photo-1610393044160-59aa13c1932f?q=80&w=800",
 ];
