@@ -1,0 +1,162 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #261b1f;
+  --color-secondary: #c87f30;
+  --color-accent: #eed583;
+  --color-background: #f4ece2;
+  --color-cream: #fef8f0;
+  --font-serif: "Playfair Display SC", serif;
+  --font-sans: "Karla", sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-primary);
+    font-family: var(--font-sans);
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  /* Subtle grain texture overlay */
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+    opacity: 0.03;
+    pointer-events: none;
+    z-index: 50;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+  }
+
+  p {
+    line-height: 1.7;
+    letter-spacing: 0.01em;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .glass {
+    @apply bg-white/70 backdrop-blur-md border border-white/20 shadow-lg;
+  }
+
+  .text-glow {
+    text-shadow: 0 0 20px rgba(200, 127, 48, 0.3);
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) rotate(0);
+  }
+  33% {
+    transform: translateY(-10px) rotate(2deg);
+  }
+  66% {
+    transform: translateY(5px) rotate(-2deg);
+  }
+}
+
+@keyframes pulse-gold {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(200, 127, 48, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 15px rgba(200, 127, 48, 0);
+  }
+}
+
+@keyframes scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-pulse-gold {
+  animation: pulse-gold 2s infinite;
+}
+
+.animate-scale-in {
+  animation: scale-in 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-[#c87f30] hover:bg-[#b57228] text-white px-8 py-4 rounded-full font-bold transition-all duration-300 cursor-pointer shadow-lg hover:shadow-xl hover:-translate-y-1 active:scale-95 flex items-center justify-center gap-2;
+  }
+
+  .btn-secondary {
+    @apply border-2 border-[#c87f30] text-[#c87f30] hover:bg-[#c87f30] hover:text-white px-8 py-4 rounded-full font-bold transition-all duration-300 cursor-pointer hover:shadow-lg hover:-translate-y-1 active:scale-95 flex items-center justify-center gap-2;
+  }
+
+  .card-hover {
+    @apply transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 border-2 border-transparent hover:border-[#c87f30]/20;
+  }
+
+  .section-padding {
+    @apply py-20 md:py-32 px-4;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto;
+  }
+
+  .heading-underline {
+    @apply relative inline-block;
+  }
+
+  .heading-underline::after {
+    @apply content-[''] absolute bottom-0 left-0 w-1/2 h-1 bg-[#c87f30] transition-all duration-300;
+  }
+
+  .heading-underline:hover::after {
+    @apply w-full;
+  }
+}
+
+::selection {
+  background-color: var(--color-secondary);
+  color: white;
+}
