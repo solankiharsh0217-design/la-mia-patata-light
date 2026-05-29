@@ -21,7 +21,7 @@ export default function ContactPage() {
       <section className="relative pt-48 pb-32 bg-[#261b1f] overflow-hidden">
         <div className="absolute inset-0 opacity-20">
           <Image 
-            src="https://images.unsplash.com/photo-1534120247760-c44c3e4a62f1?q=80&w=2000"
+            src="/images/contact-hero.jpg"
             alt="Contact background"
             fill
             className="object-cover"
@@ -228,7 +228,7 @@ export default function ContactPage() {
           <ScrollReveal>
             <div className="relative rounded-[3rem] overflow-hidden shadow-2xl h-[500px] group">
               <Image 
-                src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?q=80&w=2000"
+                src="/images/map-bg.jpg"
                 alt="Map Background"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-1000"

@@ -10,7 +10,7 @@ export default function AboutPage() {
       <section className="relative pt-48 pb-32 bg-[#261b1f] overflow-hidden">
         <div className="absolute inset-0 opacity-30">
           <Image 
-            src="https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=2000"
+            src="/images/about-hero.jpg"
             alt="Italy background"
             fill
             className="object-cover"
@@ -41,7 +41,7 @@ export default function AboutPage() {
                 <div className="absolute -top-10 -left-10 w-40 h-40 bg-[#c87f30]/10 rounded-full blur-3xl" />
                 <div className="relative rounded-[2rem] overflow-hidden shadow-2xl">
                   <Image 
-                    src="https://images.unsplash.com/photo-1599321955419-78537d3d1323?q=80&w=1000"
+                    src="/images/hero2.jpg"
                     alt="Chef preparing potato"
                     width={1000}
                     height={1200}
