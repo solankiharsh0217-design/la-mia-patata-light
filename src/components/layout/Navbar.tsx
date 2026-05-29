@@ -45,8 +45,12 @@ export default function Navbar() {
                 className="object-cover"
               />
             </div>
-            <span className="text-2xl font-serif font-bold text-[#261b1f] group-hover:text-[#c87f30] transition-colors hidden sm:inline-block">
-              La Mia <span className="text-[#c87f30] group-hover:text-[#261b1f]">Patata</span>
+            <span className={`text-2xl font-serif font-bold transition-colors hidden sm:inline-block ${
+              scrolled ? "text-[#261b1f] group-hover:text-[#c87f30]" : "text-white group-hover:text-[#c87f30]"
+            }`}>
+              La Mia <span className={`transition-colors ${
+                scrolled ? "text-[#c87f30] group-hover:text-[#261b1f]" : "text-[#c87f30] group-hover:text-white"
+              }`}>Patata</span>
             </span>
           </Link>
 
@@ -59,7 +63,9 @@ export default function Navbar() {
                   key={link.href}
                   href={link.href}
                   className={`relative text-sm uppercase tracking-widest font-bold transition-all duration-300 hover:text-[#c87f30] cursor-pointer ${
-                    isActive ? "text-[#c87f30]" : "text-[#261b1f]"
+                    isActive 
+                      ? "text-[#c87f30]" 
+                      : scrolled ? "text-[#261b1f]" : "text-white"
                   }`}
                 >
                   {link.label}
@@ -80,7 +86,9 @@ export default function Navbar() {
 
           {/* Mobile Toggle */}
           <button
-            className="md:hidden text-[#261b1f] cursor-pointer p-2 hover:bg-[#c87f30]/10 rounded-full transition-colors"
+            className={`md:hidden cursor-pointer p-2 transition-colors rounded-full ${
+              scrolled ? "text-[#261b1f] hover:bg-[#c87f30]/10" : "text-white hover:bg-white/10"
+            }`}
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label="Menu"
           >
